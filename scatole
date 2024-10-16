@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Computer</title>
+    <h1> Computer </h1>
+    <style>
+        #miascatola1 {
+            background-color: lightgray;
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        #miascatola2 {
+            background-color: lightgray;
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        #miascatola3 {
+            background-color: lightgray;
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        #miascatola4 {
+            background-color: lightgray;
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            padding: 50px;
+        }
+
+        #scatolapiccola1 {
+            background-color: white;
+            width: 450px;
+            height: 300px;
+            margin: 30px;
+            padding: 5px;
+            display: column;
+        }
+
+        #scatolapiccola2 {
+            background-color: white;
+            width: 450px;
+            height: 75px;
+            margin: 30px;
+            padding: 5px;
+            display: column;
+        }
+
+        #scatolapiccola3 {
+            background-color: white;
+            width: 450px;
+            height: 300px;
+            margin: 30px;
+            padding: 5px;
+            display: column;
+        }
+
+        #scatolapiccola4 {
+            background-color: white;
+            width: 450px;
+            height: 100px;
+            margin: 30px;
+            padding: 5px;
+            display: column;
+        }
+
+        #scatolapiccola5 {
+            background-color: white;
+            width: 450px;
+            height: 300px;
+            margin: 30px;
+            padding: 5px;
+            display: column;
+        }
+
+        #scatolapiccola6 {
+            background-color: white;
+            width: 450px;
+            height: 115px;
+            margin: 30px;
+            padding: 5px;
+            display: column;
+        }
+
+        #scatolapiccola7 {
+            background-color: white;
+            width: 450px;
+            height: 300px;
+            margin: 30px;
+            padding: 5px;
+            display: column;
+        }
+
+        #scatolapiccola8 {
+            background-color: white;
+            width: 450px;
+            height: 115px;
+            margin: 30px;
+            padding: 5px;
+            display: column;
+        }
+    </style>
+</head>
+    <div id="miascatola1">
+        <div id="scatolapiccola1">
+            <img src="imm1.jpeg" width="450px" height="300px" />
+        </div>
+        <div id="scatolapiccola2">
+            L'immagine mostra una foto di un componente hardware di un computer, un masterizzatore di DVD, che è un dispositivo che consente di scrivere (o "masterizzare") dati su dischi DVD.
+        </div>
+    </div>
+
+    <div id="miascatola2">
+        <div id="scatolapiccola3">
+            <img src="imm2.jpg" width="450px" height="300px" />
+        </div>
+        <div id="scatolapiccola4">
+            L'immagine mostra l'interno di un computer, con la scheda madre, il dissipatore di calore con ventola per la CPU e vari cavi colorati. Sulla destra c'è una grande ventola di raffreddamento, probabilmente parte della scheda grafica.
+        </div>
+    </div>
+
+    <div id="miascatola3">
+        <div id="scatolapiccola5">
+            <img src="imm3.jpg" width="450px" height="300px" />
+        </div>
+        <div id="scatolapiccola6">
+            L'immagine mostra l'alimentatore del computer, noto anche come PSU (Power Supply Unit). Questo componente è responsabile di fornire energia elettrica a tutti gli altri componenti del computer, come la scheda madre, la CPU, la scheda grafica, e altri dispositivi interni.
+        </div>
+    </div>
+
+    <div id="miascatola4">
+        <div id="scatolapiccola7">
+            <img src="imm4.jpg" width="450px" height="300px" />
+        </div>
+        <div id="scatolapiccola8">
+            L'immagine mostra un hard disk Seagate Barracuda da 1000 GB (1 TB) montato all'interno di un computer. Un hard disk è un dispositivo di archiviazione dati non volatile che memorizza e recupera informazioni digitali utilizzando uno o più dischi rigidi rivestiti con materiale magnetico.
+        </div>
+    </div>
+</body>
+</html>
