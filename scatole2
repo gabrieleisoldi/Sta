@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+#miascatola1{background-color: rgb(224, 154, 245); width: 500px; height:500px; margin:50px; padding:50px}
+#miascatola2{background-color: blue; width: 500px; height:500px; margin:50px; padding:50px}
+#miascatola3{background-color: rgb(255, 0, 0); width: 500px; height:500px; margin:50px; padding:50px}
+#miascatola4{background-color: rgb(30, 255, 0); width: 500px; height:500px; margin:50px; padding:50px}
+#miascatola5{background-color: rgb(115, 128, 0); width: 500px; height:500px; margin:50px; padding:50px}
+    </style>
+</head>
+<body>
+    
+</body>
+
+<div id="miascatola1">
+    “Gli scienziati sognano di fare grandi cose. Gli ingegneri le realizzano.” James Michener
+</div>
+<div id="miascatola2">
+    “Le leggi della scienza dovrebbero essere le stesse per tutti gli osservatori che si muovono liberamente, a prescindere dalla loro velocità.” Stephen Hawking
+</div>
+<div id="miascatola3">
+    Per lo zoologo la parola "creazione" ha il significato di un "processo di cui ignora le modalità". Charls Robert Darwin
+</div>
+<div id="miascatola4">
+    “La mente scientifica non fornisce tanto le risposte giuste quanto le giuste domande.” Claude Lévi-Strauss
+</div>
+<div id="miascatola5">
+    “Lo scienziato descrive ciò che esiste; l'ingegnere crea ciò che non era mai stato.”  Theodore von Kármán
+</div>
+</html>
