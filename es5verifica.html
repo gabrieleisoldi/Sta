@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numero"><br>
+    <button onclick="verificaNumero()">Controlla se è pari/dispari</button>
+    <script>
+        function verificaNumero() {
+            let numb = Number(document.getElementById("numero").value);
+            
+            if (numb % 2 === 0) {
+                alert("Il numero che hai digitato è pari");
+            } else {
+                alert("Il numero che hai digitato è dispari");
+            }
+        }
+    </script>
+</body>
+</html>
