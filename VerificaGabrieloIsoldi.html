@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore Legge di Ohm</title>
+</head>
+<body>
+
+
+    <h2>Calcolatore Legge di Ohm</h2>
+    <label for="formula">Scegli la formula (1 per V=I⋅R, 2 per I=V/R, 3 per R=V/I):</label>
+    <input type="numereo" id="formula" placeholder="Scegli quale delle 3 formule">
+    <div id="inputFields"></div>
+    <button onclick="calcola()">Calcola</button>
+    <p id="output"></p>
+
+
+    <script>
+        function creaCampi() {
+            const formula = parseInt(document.getElementById('formula').value);
+            const inputFields = document.getElementById('inputFields');
+            inputFields.innerHTML = '';
+
+                      if (formula === 1) {
+                            inputFields.innerHTML = `
+                          <label for="I">Inserisci I (ampere):</label>
+                          <input type="number" id="I" placeholder="Intensità di corrente">
+                          <label for="R">Inserisci R (ohm):</label>
+                          <input type="number" id="R" placeholder="Resistenza">
+                `;
+                         } else if (formula === 2) {
+                            inputFields.innerHTML = `
+                   <label for="V">Inserisci V (volt):</label>
+                   <input type="number" id="V" placeholder="Voltaggio">
+                 <label for="R">Inserisci R (ohm):</label>
+                 <input type="number" id="R" placeholder="Resistenza">
+                `;
+                          } else if (formula === 3) {
+                inputFields.innerHTML = `
+                    <label for="V">Inserisci V (volt):</label>
+                    <input type="number" id="V" placeholder="Voltaggio">
+                    <label for="I">Inserisci I (ampere):</label>
+                    <input type="number" id="I" placeholder="Intensità di corrente">
+                `;
+            } else {
+                inputFields.innerHTML = 'Selezione non valida. Scegli fra la 1,la 2 e la 3.';
+            }
+        }
+
+    
+        function calcola() {
+            const formula = parseInt(document.getElementById('formula').value);
+            let output = '';
+               if (formula === 1) {
+                    const I = parseFloat(document.getElementById('I').value);
+                    const R = parseFloat(document.getElementById('R').value);
+                    output = `V = ${I * R} volt`;
+                } else if (formula === 2) {
+                    const V = parseFloat(document.getElementById('V').value);
+                    const R = parseFloat(document.getElementById('R').value);
+                    output = `I = ${V / R} ampere`;
+                } else if (formula === 3) {
+                    const V = parseFloat(document.getElementById('V').value);
+                    const I = parseFloat(document.getElementById('I').value);
+                     output = `R = ${V / I} ohm`;
+               } else {
+                   output = 'Selezione invalida. Scegli fra la 1,la 2 e la  3.';
+               }
+            document.getElementById('output').innerText = output;
+        }
+
+        document.getElementById('formula').addEventListener('input', creaCampi);
+
+
+    </script>
+</body>
+</html>
