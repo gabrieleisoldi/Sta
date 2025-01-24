@@ -16,7 +16,7 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
-            padding: 25px;
+            padding: 20px;
             background: #fff; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
@@ -24,8 +24,8 @@
             color: #333;
         }
         h1 {
-            border-bottom: 3px solid #333; 
-            padding-bottom: 15px;
+            border-bottom: 2px solid #333; 
+            padding-bottom: 10px;
         }
         .concept-map img {
             width: 100%; 
@@ -36,56 +36,57 @@
             list-style: disc inside; 
         }
         .calculator {
-            border-top: 3px solid #333;
-            padding-top: 25px;
-            margin-top: 25px;
+            border-top: 2px solid #333;
+            padding-top: 20px;
+            margin-top: 20px;
         }
         .biography {
-            margin-top: 25px;
+            margin-top: 20px;
             display: flex;
             align-items: center;
         }
-        .biography img {
-            margin-left: 25px;
-            border-radius: 50%; 
-            width: 165px; 
-            height: auto; 
-        }
-        .OHM {
+        
+      .OHM {
             max-width: 100%; 
         }
         #output {
             font-weight: bold; 
-            margin-top: 15px;
+            margin-top: 10px;
         }
     
     </style>
 </head>
 <body>
-@@ -67,7 +68,7 @@
+    <div class="container">
+        <h1>Prima Legge di Ohm</h1>
+        <p>La legge di Ohm afferma che la corrente che scorre attraverso un conduttore tra due punti è direttamente proporzionale alla tensione presente ai due estremi e inversamente proporzionale alla resistenza. La formula è: V = I * R.</p>
 
-        <h2>Mappa Concettuale</h2>
+        <h2>Mappa Concettuale legge di Ohm</h2>
         <div class="concept-map">
-            <img src="2 leggi di Ohm-2 leggi di Ohm.png" alt="Mappa Concettuale Legge di Ohm">
-            <img src="2 leggi di Ohm-2 leggi di Ohm.png" alt="Mappa della Legge di Ohm">
+            <img src="2 leggi di Ohm-2 leggi di Ohm.png" alt="Mappa Concettuale della Legge di Ohm">
+            <img src="2 leggi di Ohm-2 leggi di Ohm.png" alt="Mappa Concettuale della Legge di Ohm">
         </div>
 
-        <h2>Concetti sulla legge di Ohm</h2>
-@@ -79,17 +80,16 @@
-            <li>viene utilizzata per calcolare la relazione tra tensione, corrente e resistenza.</li>
+        <h2>Concetti legge di Ohm</h2>
+        <ul>
+            <li>La legge di Ohm è fondamentale per l'elettrotecnica</li>
+            <li>viene utilizzata per calcolare tensione, corrente e resistenza</li>
+            <li>La formula della legge di Ohm è V = I * R.</li>
+            <li>La corrente è proporzionale alla tensione</li>
+            <li>La resistenza oppone il flusso di corrente</li>
         </ul>
 
-        <h2>Calcolatrice della Legge di Ohm</h2>
+        <h2>Calcolo della Legge di Ohm</h2>
         <p>Calcolo della variabile utilizzando la Legge di Ohm</p>
         <h2>Calcolatore della Legge di Ohm</h2>
-        <p>Inserisci il numero della formula da utilizzare:</p>
+        <p>Inserire il numero della formula da utilizzare:</p>
         <p>1 V = I ⋅ R</p>   
         <p>2 I = V / R​</p> 
         <p>3 R = V / I</p>
         <input type="number" id="formula" placeholder="1, 2 o 3"><br>
         <input id="formula" placeholder="1, 2 o 3"><br>
         <div id="valori">
-            <p>Inserire i valori per il calcolo:</p>
+            <p>Inserisci i valori per il calcolo:</p>
             <input type="number" id="valore1" placeholder="I o R o V"><br>
             <input type="number" id="valore2" placeholder="R o V o I"><br>
             <input id="valore1" placeholder="I o R o V"><br>
@@ -93,22 +94,37 @@
         </div>
         <p><button class="miobotton1" id="miobotton1" onclick="calcola()">Calcola</button></p>
         <p id="output"></p>
-@@ -99,7 +99,15 @@
-            <p>Georg Simon Ohm (1789-1854) fu un fisico e matematico di origine tedesca. Oggi è conosciuto per essere riuscito a formulare la sua legge(legge di Ohm),in cui viene trattata la relazione tra corrente, tesnione e resistenza in un circuito elettrico. Nel 1827 pubblicò la sua miglior opera</p>
-            <img src="Georg_Simon_Ohm_(1789-1854).jpg" alt="Foto di Georg Simon Ohm" class="OHM">
-        </div>
-        <h3>Video spiegazione</h3>
-        <iframe width="625" height="375" src="https://www.youtube.com/embed/4YlCsEnm4E0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="625" height="375" src="https://www.youtube.com/embed/QHifiMuHFBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Biografia di Georg Simon Ohm</h2>
+        <div class="biography">
+            <p>Georg Simon Alfred Ohm ( 16 marzo 1789 –  6 luglio 1854) è stato un fisico e matematico tedesco.Ohm iniziò la sua ricerca con la nuova cella elettrochimica,Utilizzando attrezzature di sua creazione, Ohm si accorse che esiste una proporzionalità diretta tra la differenza di potenziale (o tensione) applicata attraverso un conduttore e la corrente elettrica risultante. Questa relazione è nota come legge di Ohm.
+           </div>
+        <h3>2 Video spiegazione</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4YlCsEnm4E0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QHifiMuHFBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h4>Sitografia</h4>
         <ul>
-            <li><a href="https://it.wikipedia.org/wiki/Georg_Simon_Ohm">Wikipedia -Fonte su Georg Simon Ohm</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Legge_di_Ohm">Wikipedia - Legge di Ohm</a></li>
+            <li><a href="https://it.wikipedia.org/wiki/Georg_Ohm"> - Georg Simon Ohm</a></li>
+            <li><a href="https://sapere.virgilio.it/scuola/medie/fisica/elettricita-magnetismo/leggi-ohm-definizione-formule">- Legge di Ohm</a></li>
     </div>
     <script>
          function calcola() {
             let formula = document.getElementById("formula").value;
-@@ -121,6 +129,5 @@
+            let valore1 = document.getElementById("valore1").value;
+            let valore2 = document.getElementById("valore2").value;
+            let risultato;
+
+            if (formula == 1) {
+                risultato = valore1 * valore2; 
+                document.getElementById("output").innerText = "Il voltaggio (V) è " + risultato + " Volt.";
+            } else if (formula == 2) {
+                risultato = valore1 / valore2; 
+                document.getElementById("output").innerText = "L'intensità di corrente (I) è " + risultato + " Ampere.";
+            } else if (formula == 3) {
+                risultato = valore1 / valore2; 
+                document.getElementById("output").innerText = "La resistenza (R) è " + risultato + " Ohm.";
+            } else {
+                document.getElementById("output").innerText = "Formula non specificata. Inserisci la formula 1, 2 o 3.";
             }
         }
     </script>
